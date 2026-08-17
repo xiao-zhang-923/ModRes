@@ -1,0 +1,1 @@
+var e=new Set([`GET_STATE`,`SAVE_RULES`,`SET_GLOBAL_ENABLED`,`ENABLE_TAB`,`DISABLE_TAB`,`IMPORT_WORKSPACE`,`RESET_WORKSPACE`]);function t(t){return typeof t!=`object`||!t||!(`type`in t)?!1:e.has(t.type)}function n(e){return typeof e==`object`&&!!e&&`type`in e&&e.type===`STATE_UPDATED`&&`state`in e}export{n,t};

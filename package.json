@@ -1,0 +1,29 @@
+{
+  "name": "modres",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "A focused, visual HTTP response mocking studio for Chrome.",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc --noEmit && vite build",
+    "generate:icons": "node scripts/generate-icons.mjs",
+    "build:extension": "npm run generate:icons && npm run build"
+  },
+  "dependencies": {
+    "lucide-react": "1.31.0",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@types/chrome": "0.2.5",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.4",
+    "typescript": "7.0.2",
+    "vite": "8.2.1"
+  }
+}
